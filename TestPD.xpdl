@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:deprecated="http://www.wfmc.org/2002/XPDL1.0" xmlns:ibpm="http://fujitsu.com/ibpm1" xmlns:xpdl="http://www.wfmc.org/2008/XPDL2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="342" Name="TestPD" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/docs/bpmnxpdl_31.xsd">
+    <PackageHeader>
+        <XPDLVersion>2.1</XPDLVersion>
+        <Vendor>Fujitsu</Vendor>
+        <Created>Tue Jan 07 18:30:24 IST 2020</Created>
+    </PackageHeader>
+    <RedefinableHeader PublicationStatus="UNDER_TEST"/>
+    <Script Type="text/javascript"/>
+    <Participants>
+        <Participant Id="admin" Name="admin">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="AdminRole" Name="AdminRole">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Id="1"/>
+    </Pages>
+    <Pools>
+        <Pool BoundaryVisible="false" Id="Pool1" Name="" Orientation="HORIZONTAL" Process="342">
+            <Lanes/>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="117.0" PageId="1" ToolId="InterstageBusinessProcessManager" Width="567.0">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations/>
+    <Artifacts/>
+    <WorkflowProcesses>
+        <WorkflowProcess AccessLevel="PUBLIC" Id="342" Name="TestPD">
+            <ProcessHeader DurationUnit="s">
+                <Priority>8</Priority>
+            </ProcessHeader>
+            <RedefinableHeader PublicationStatus="UNDER_TEST">
+                <Author>admin</Author>
+                <Version>7.0</Version>
+                <Responsibles>
+                    <Responsible>admin</Responsible>
+                </Responsibles>
+            </RedefinableHeader>
+            <DataFields/>
+            <ActivitySets/>
+            <Activities>
+                <Activity Id="367" Name="Start">
+                    <Event>
+                        <StartEvent Trigger="None"/>
+                    </Event>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="371"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="NodeType" Value="0"/>
+                        <ExtendedAttribute Name="Associations">
+                            <ibpm:Associations/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Artifacts">
+                            <ibpm:Artifacts/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Coordinates">
+                            <ibpm:Coordinates xpos="81" ypos="80"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="60.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="60.0">
+                            <Coordinates XCoordinate="50.0" YCoordinate="50.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="368" Name="User Task1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>AdminRole</Performer>
+                    <Performers>
+                        <Performer>AdminRole</Performer>
+                    </Performers>
+                    <Priority>-1</Priority>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="372"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="NodeType" Value="2"/>
+                        <ExtendedAttribute Name="ExpandGroups" Value="true"/>
+                        <ExtendedAttribute Name="EnableFutureWorkItems" Value="false"/>
+                        <ExtendedAttribute Name="RecallDisabled" Value="false"/>
+                        <ExtendedAttribute Name="Simulation">
+                            <ibpm:Simulation>
+                                <Duration>3600000</Duration>
+                                <Resources/>
+                                <Connectors>
+                                    <Connector Name="Arrow2" Probability="100.0"/>
+                                </Connectors>
+                            </ibpm:Simulation>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Associations">
+                            <ibpm:Associations/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Artifacts">
+                            <ibpm:Artifacts/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Coordinates">
+                            <ibpm:Coordinates xpos="274" ypos="98"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="68.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="102.0">
+                            <Coordinates XCoordinate="221.0" YCoordinate="64.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="369" Name="User Task2">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>AdminRole</Performer>
+                    <Performers>
+                        <Performer>AdminRole</Performer>
+                    </Performers>
+                    <Priority>-1</Priority>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="373"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="NodeType" Value="2"/>
+                        <ExtendedAttribute Name="ExpandGroups" Value="true"/>
+                        <ExtendedAttribute Name="EnableFutureWorkItems" Value="false"/>
+                        <ExtendedAttribute Name="RecallDisabled" Value="false"/>
+                        <ExtendedAttribute Name="Simulation">
+                            <ibpm:Simulation>
+                                <Duration>3600000</Duration>
+                                <Resources/>
+                                <Connectors>
+                                    <Connector Name="Arrow3" Probability="100.0"/>
+                                </Connectors>
+                            </ibpm:Simulation>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Associations">
+                            <ibpm:Associations/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Artifacts">
+                            <ibpm:Artifacts/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Coordinates">
+                            <ibpm:Coordinates xpos="416" ypos="112"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="68.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="102.0">
+                            <Coordinates XCoordinate="363.0" YCoordinate="78.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="370" Name="End1">
+                    <Event>
+                        <EndEvent/>
+                    </Event>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="NodeType" Value="1"/>
+                        <ExtendedAttribute Name="Associations">
+                            <ibpm:Associations/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Artifacts">
+                            <ibpm:Artifacts/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Coordinates">
+                            <ibpm:Coordinates xpos="567" ypos="117"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="66.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="66.0">
+                            <Coordinates XCoordinate="536.0" YCoordinate="87.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="IntermediateEvent1" Name="User Task1_Arrow2">
+                    <Event>
+                        <IntermediateEvent Implementation="Other" Target="368" Trigger="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="18.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="18.0">
+                            <Coordinates XCoordinate="280.0" YCoordinate="55.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="IntermediateEvent2" Name="User Task2_Arrow3">
+                    <Event>
+                        <IntermediateEvent Implementation="Other" Target="369" Trigger="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="18.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="18.0">
+                            <Coordinates XCoordinate="422.0" YCoordinate="69.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="367" Id="371" Name="Arrow1" To="368">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="StartPoint">
+                            <ibpm:StartPoint xpos="100" ypos="54"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="EndPoint">
+                            <ibpm:EndPoint xpos="221" ypos="98"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="ViewerScript">
+                            <ibpm:ViewerScript Value="100,44,160,44,160,98"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo FillColor="light blue" IsVisible="true" PageId="1">
+                            <Coordinates XCoordinate="100.0" YCoordinate="54.0"/>
+                            <Coordinates XCoordinate="100.0" YCoordinate="44.0"/>
+                            <Coordinates XCoordinate="160.0" YCoordinate="44.0"/>
+                            <Coordinates XCoordinate="160.0" YCoordinate="98.0"/>
+                            <Coordinates XCoordinate="221.0" YCoordinate="98.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="368" Id="372" Name="Arrow2" To="369">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="StartPoint">
+                            <ibpm:StartPoint xpos="289" ypos="64"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="EndPoint">
+                            <ibpm:EndPoint xpos="363" ypos="95"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="ViewerScript">
+                            <ibpm:ViewerScript Value="289,54,326,54,326,95"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo FillColor="light blue" IsVisible="true" PageId="1">
+                            <Coordinates XCoordinate="289.0" YCoordinate="64.0"/>
+                            <Coordinates XCoordinate="289.0" YCoordinate="54.0"/>
+                            <Coordinates XCoordinate="326.0" YCoordinate="54.0"/>
+                            <Coordinates XCoordinate="326.0" YCoordinate="95.0"/>
+                            <Coordinates XCoordinate="363.0" YCoordinate="95.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="369" Id="373" Name="Arrow3" To="370">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="StartPoint">
+                            <ibpm:StartPoint xpos="431" ypos="78"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="EndPoint">
+                            <ibpm:EndPoint xpos="536" ypos="120"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="ViewerScript">
+                            <ibpm:ViewerScript Value="431,68,482,68,482,120"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo FillColor="light blue" IsVisible="true" PageId="1">
+                            <Coordinates XCoordinate="431.0" YCoordinate="78.0"/>
+                            <Coordinates XCoordinate="431.0" YCoordinate="68.0"/>
+                            <Coordinates XCoordinate="482.0" YCoordinate="68.0"/>
+                            <Coordinates XCoordinate="482.0" YCoordinate="120.0"/>
+                            <Coordinates XCoordinate="536.0" YCoordinate="120.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes xmlns:ibpm="http://fujitsu.com/ibpm1">
+                <ExtendedAttribute Name="SWIM_LANES">
+                    <ibpm:SWIM_LANES/>
+                </ExtendedAttribute>
+                <ExtendedAttribute Name="Associations">
+                    <ibpm:Associations/>
+                </ExtendedAttribute>
+                <ExtendedAttribute Name="Artifacts">
+                    <ibpm:Artifacts/>
+                </ExtendedAttribute>
+                <ExtendedAttribute Name="SameSubPlanVersion" Value="false"/>
+                <ExtendedAttribute Name="ProcessDefinitionId" Value="342"/>
+                <ExtendedAttribute Name="ProcessTypeId" Value="0"/>
+                <ExtendedAttribute Name="State" Value="0"/>
+                <ExtendedAttribute Name="TemplateIdentifier" Value="System"/>
+                <ExtendedAttribute Name="ProcessOwnerRole" Value="AdminRole"/>
+                <ExtendedAttribute Name="StartingMultiProcessDisabled" Value="false"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+    <ExtendedAttributes>
+        <ExtendedAttribute Name="Build" Value="11.4 IF1141015"/>
+        <ExtendedAttribute Name="System" Value="INTERSTAGEBPMFlow"/>
+    </ExtendedAttributes>
+</Package>
